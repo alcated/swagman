@@ -1,6 +1,5 @@
 const restify = require('restify');
 const builder = require('botbuilder');
-const audioToText = require('./audioToText');
 //=========================================================
 // Bot Setup
 //=========================================================
