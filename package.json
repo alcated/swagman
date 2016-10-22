@@ -1,0 +1,36 @@
+{
+  "name": "swagman",
+  "version": "1.0.0",
+  "description": "Bot that help you tailoring your outfit ",
+  "main": "build/app.js",
+  "scripts": {
+    "start": "npm run build & nodemon -w ./build ./build/app.js",
+    "build": "babel src -d build --watch",
+    "test": "mocha tests/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alcated/swagman.git"
+  },
+  "keywords": [
+    "Bot",
+    "Clothing",
+    "Assistance"
+  ],
+  "author": "Teddy Alcabelard",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/alcated/swagman/issues"
+  },
+  "homepage": "https://github.com/alcated/swagman#readme",
+  "dependencies": {
+    "botbuilder": "^3.3.3",
+    "restify": "^4.1.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-preset-latest": "^6.16.0",
+    "mocha": "^3.1.2",
+    "nodemon": "^1.11.0"
+  }
+}
